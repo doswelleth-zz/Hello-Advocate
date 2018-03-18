@@ -12,7 +12,6 @@ import StoreKit
 
 private let reuseIdentifier = "reuseIdentifier"
 private let logOutButtonTitle = "◀︎"
-private let learnButtonTitle = "Learn"
 private let fileClaimButtonTitle = "File a claim"
 private let learnMoreButtonTitle = "Learn more"
 private let settingsButtonTitle = "Settings"
@@ -22,10 +21,6 @@ private let alertTitle = "Confirm"
 private let messageTitle = "Log out?"
 private let yes = "Yes"
 private let no = "No"
-
-private let learnAlertTitle = "Subscription"
-private let learnAlertMessageTitle = "Only subscribers may file a claim. If you already have a subscription you may restore the button to file a new claim in your settings for free."
-private let learnActionTitle = "Okay"
 
 class ProfileController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
@@ -39,19 +34,6 @@ class ProfileController: UICollectionViewController, UICollectionViewDelegateFlo
         button.isUserInteractionEnabled = true
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(logOutButtonTap), for: .touchUpInside)
-        return button
-    }()
-    
-    let learnButton : UIButton = {
-        let button = UIButton(type: .system) as UIButton
-        button.setTitle(learnButtonTitle, for: .normal)
-        button.setTitleColor(.black, for: .normal)
-        button.titleLabel?.textAlignment = .right
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
-        button.backgroundColor = .white
-        button.isUserInteractionEnabled = true
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(learnButtonTap(sender:)), for: .touchUpInside)
         return button
     }()
     
@@ -175,10 +157,6 @@ class ProfileController: UICollectionViewController, UICollectionViewDelegateFlo
         presentLogOutAlert()
     }
     
-    @objc func learnButtonTap(sender: UIButton) {
-        presentLearnAlert()
-    }
-    
     @objc func fileClaimButtonTap(sender: UIButton) {
         let destination = FileClaimController()
         self.navigationController?.pushViewController(destination, animated: true)
@@ -195,20 +173,12 @@ class ProfileController: UICollectionViewController, UICollectionViewDelegateFlo
     }
     
     @objc private func subscribeButtonTap(sender: UIButton) {
-        // create design
-        IAPHelper.shared.purchase(product: .autoRenewingSubscription)
+        let subscribeController = SubscribeController()
+        self.navigationController?.pushViewController(subscribeController, animated: true)
     }
     
     @objc private func makeFileClaimButtonVisible() {
         fileClaimButton.isHidden = false
-    }
-    
-    private func presentLearnAlert() {
-        let alert = UIAlertController(title: learnAlertTitle, message: learnAlertMessageTitle, preferredStyle: .alert)
-        let okay = UIAlertAction(title: learnActionTitle, style: .default) { (action) in
-        }
-        alert.addAction(okay)
-        present(alert, animated: true, completion: nil)
     }
     
     private func presentLogOutAlert() {
@@ -248,7 +218,6 @@ class ProfileController: UICollectionViewController, UICollectionViewDelegateFlo
         view.backgroundColor = .white
         
         view.addSubview(logOutButton)
-        view.addSubview(learnButton)
         view.addSubview(usernameLabel)
         view.addSubview(subscribeButton)
         view.addSubview(learnMoreButton)
@@ -264,15 +233,6 @@ class ProfileController: UICollectionViewController, UICollectionViewDelegateFlo
         view.addConstraints([NSLayoutConstraint(item: logOutButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 31)])
         
         view.addConstraints([NSLayoutConstraint(item: logOutButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 31)])
-        
-        
-        view.addConstraints([NSLayoutConstraint(item: learnButton, attribute: .right, relatedBy: .equal, toItem: margin, attribute: .right, multiplier: 1, constant: -10)])
-        
-        view.addConstraints([NSLayoutConstraint(item: learnButton, attribute: .top, relatedBy: .equal, toItem: margin, attribute: .top, multiplier: 1, constant: 30)])
-        
-        view.addConstraints([NSLayoutConstraint(item: learnButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 100)])
-        
-        view.addConstraints([NSLayoutConstraint(item: learnButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 31)])
         
         
         view.addConstraints([NSLayoutConstraint(item: usernameLabel, attribute: .centerX, relatedBy: .equal, toItem: margin, attribute: .centerX, multiplier: 1, constant: 0)])

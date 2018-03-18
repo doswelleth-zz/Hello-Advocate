@@ -33,6 +33,7 @@
 		A62E4EEE205C92D600C72A56 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EED205C92D600C72A56 /* SettingsController.swift */; };
 		A62E4EF0205C93AD00C72A56 /* PrivacyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EEF205C93AD00C72A56 /* PrivacyController.swift */; };
 		A62E4EF2205C964700C72A56 /* FileClaimTextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EF1205C964700C72A56 /* FileClaimTextController.swift */; };
+		A62E4EF4205D177800C72A56 /* SubscribeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EF3205D177700C72A56 /* SubscribeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		A62E4EED205C92D600C72A56 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		A62E4EEF205C93AD00C72A56 /* PrivacyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyController.swift; sourceTree = "<group>"; };
 		A62E4EF1205C964700C72A56 /* FileClaimTextController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileClaimTextController.swift; sourceTree = "<group>"; };
+		A62E4EF3205D177700C72A56 /* SubscribeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 				A62E4EDF205C81CA00C72A56 /* LoginController.swift */,
 				A62E4EE5205C8B3C00C72A56 /* SignInController.swift */,
 				A62E4EE7205C8B8B00C72A56 /* ProfileController.swift */,
+				A62E4EF3205D177700C72A56 /* SubscribeController.swift */,
 				A62E4EE9205C912400C72A56 /* LearnController.swift */,
 				A62E4EED205C92D600C72A56 /* SettingsController.swift */,
 				A62E4EEB205C923F00C72A56 /* FileClaimController.swift */,
@@ -369,6 +372,7 @@
 				A62E4EF0205C93AD00C72A56 /* PrivacyController.swift in Sources */,
 				A62E4EDA205C7FA600C72A56 /* KeychainPasswordItem.swift in Sources */,
 				A62E4E97205C768500C72A56 /* AppDelegate.swift in Sources */,
+				A62E4EF4205D177800C72A56 /* SubscribeController.swift in Sources */,
 				A62E4EDC205C807100C72A56 /* FileTextStrings.swift in Sources */,
 				A62E4EEE205C92D600C72A56 /* SettingsController.swift in Sources */,
 				A62E4ED6205C7D5E00C72A56 /* Privacy.swift in Sources */,

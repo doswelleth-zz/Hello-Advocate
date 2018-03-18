@@ -15,9 +15,10 @@ private let saveButtonTitle = "Save"
 private let privacyButtonTitle = "Privacy"
 private let restoreButtonTitle = "Restore"
 
-private let restoreAlertTitle = "Success"
-private let restoreMessageTitle = "Your membership is restored"
-private let restoreActionTitle = "Okay"
+private let restoreAlertTitle = "Restore Membership"
+private let restoreMessageTitle = "Restore your Membership today for $4.99 a month and enjoy access to unlimited file claims and a qualified attorney for free."
+private let restoreActionTitle = "Restore"
+private let dismissActionTitle = "Dismiss"
 
 class SettingsController: UIViewController {
     
@@ -108,7 +109,6 @@ class SettingsController: UIViewController {
     }
     
     @objc func restoreButtonTap(sender: UIButton) {
-        IAPHelper.shared.restorePurchases()
         presentRestoreAlert()
         self.navigationController?.popViewController(animated: true)
     }
@@ -128,9 +128,13 @@ class SettingsController: UIViewController {
     
     @objc private func presentRestoreAlert() {
         let alert = UIAlertController(title: restoreAlertTitle, message: restoreMessageTitle, preferredStyle: .alert)
-        let okay = UIAlertAction(title: restoreActionTitle, style: .default) { (action) in
+        let restore = UIAlertAction(title: restoreActionTitle, style: .default) { (action) in
+            IAPHelper.shared.restorePurchases()
         }
-        alert.addAction(okay)
+        let dismiss = UIAlertAction(title: dismissActionTitle, style: .default) { (action) in
+        }
+        alert.addAction(restore)
+        alert.addAction(dismiss)
         present(alert, animated: true, completion: nil)
     }
     

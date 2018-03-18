@@ -43,7 +43,8 @@ class LearnMoreController: UIViewController {
         textView.textAlignment = .justified
         textView.textColor = .black
         textView.font = UIFont.systemFont(ofSize: 17)
-        textView.isUserInteractionEnabled = true
+        textView.isScrollEnabled = true
+        textView.allowsEditingTextAttributes = false
         textView.translatesAutoresizingMaskIntoConstraints = false
         return textView
     }()

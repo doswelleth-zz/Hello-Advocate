@@ -13,13 +13,13 @@ struct Learn {
 
 According to Bureau Labor Statistics, service industry jobs are the fastest growing sector nationally, both in percentage and in absolute terms. As manufacturing jobs recede into a crowded services economy, the need for smart legal representation for low-income workers in the event of harrassment, discrimination or wages owed, is fundamental to a healthy workplace.
 
-Restaurants are a chaotic and diverse environment. But sexual harrassment, wages withheld, or discrimination of any kind, should never be tolerated. Food and beverage workers deserve an independent network of financial and moral support.
+Restaurants are chaotic and diverse environments. But impropriety, sexual harrassment, wages withheld, or discrimination of any kind, should never ever be tolerated. Food and beverage workers deserve a focused independent network of financial and moral support.
 
 Welcome to Advocate.
 
 Your subscription entitles you to file a claim for what you may deem to be a dispute. All claims filed are reviewed. Should we find your claim interesting, we will contact you via the email you submitted on your form.
 
-From there we will set up a meeting with a case worker, who will then be assigned to you and will meet with you in a public place.
+From there we will set up a meeting with one of our case workers, who will be assigned to you and will meet with you in a public place.
 
 If your claim is accepted by us, we will provide you a qualified attorney for free.
 
@@ -32,6 +32,7 @@ We believe in discretion, and will not inform any person or organization other t
 We will qualify every claim based on internal criteria. Please be patient with us. We cannot reach everyone at the moment but will be able to very soon.
 
 Welcome, and stay safe,
+
 David Oliver Doswell
 Founder, Advocate
 
