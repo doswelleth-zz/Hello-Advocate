@@ -31,7 +31,7 @@ We believe in discretion, and will not inform any person or organization other t
 
 We will qualify every claim based on internal criteria. Please be patient with us. We cannot reach everyone at the moment but will be able to very soon.
 
-Welcome, and stay safe,
+Warmly,
 
 David Oliver Doswell
 Founder, Advocate
