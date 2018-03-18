@@ -7,15 +7,13 @@
 //
 
 import UIKit
+import SafariServices
 
 private let backButtonTitle = "◀︎"
 private let subscriptionLabelTitle = "Welcome to Membership"
 private let subscribeButtonTitle = "Subscribe"
-private let subscriptionTextViewText = """
-
-Subscribe today for $4.99 a month to file unlimited claim applications to Advocate. As a Member, your subscription will begin today and renew every month. You may cancel at any time in your iTunes settings. In the event your claim is accepted over a legal workplace dispute, we will provide you an attorney for free.
-
-"""
+private let privacyButtonTitle = "Privacy Policy"
+private let privacyLink = "https://github.com/davidoliverdoswell/Advocate"
 
 class SubscribeController: UIViewController {
     
@@ -32,6 +30,19 @@ class SubscribeController: UIViewController {
         return button
     }()
     
+    let privacyPolicyButton : UIButton = {
+        let button = UIButton(type: .system) as UIButton
+        button.setTitle(privacyButtonTitle, for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.titleLabel?.textAlignment = .right
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
+        button.backgroundColor = .white
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.isUserInteractionEnabled = true
+        button.addTarget(self, action: #selector(privacyButtonTap(sender:)), for: .touchUpInside)
+        return button
+    }()
+    
     let subscriptionLabel : UILabel = {
         let label = UILabel()
         label.text = subscriptionLabelTitle
@@ -44,12 +55,12 @@ class SubscribeController: UIViewController {
     
     let subscriptionTextView : UITextView = {
         let textView = UITextView()
-        textView.text = subscriptionTextViewText
+        textView.text = SubscriptionText().strings
         textView.textColor = .black
         textView.tintColor = .black
         textView.textAlignment = .justified
         textView.font = UIFont.boldSystemFont(ofSize: 17)
-        textView.isScrollEnabled = false
+        textView.isScrollEnabled = true
         textView.allowsEditingTextAttributes = false
         textView.translatesAutoresizingMaskIntoConstraints = false
         return textView
@@ -74,7 +85,7 @@ class SubscribeController: UIViewController {
         super.viewDidLoad()
         
         setUpViews()
-
+        
     }
     
     @objc private func backButtonTap(sender: UIButton) {
@@ -82,7 +93,23 @@ class SubscribeController: UIViewController {
     }
     
     @objc private func subscribeButtonTap(sender: UIButton) {
-        print("New subscriber")
+        IAPHelper.shared.purchase(product: .autoRenewingSubscription)
+    }
+    
+    @objc private func privacyButtonTap(sender: UIButton) {
+        privacyPolicyLink()
+    }
+    
+    func privacyPolicyLink() {
+        if let url = URL(string: PrivacyPolicy().string) {
+            let configuration = SFSafariViewController.Configuration()
+            configuration.barCollapsingEnabled = false
+            
+            let safariViewController = SFSafariViewController(url: url, configuration: configuration)
+            safariViewController.preferredBarTintColor = .white
+            safariViewController.preferredControlTintColor = .black
+            present(safariViewController, animated: true)
+        }
     }
     
     private func setUpViews() {
@@ -90,6 +117,7 @@ class SubscribeController: UIViewController {
         view.backgroundColor = .white
         
         view.addSubview(backButton)
+        view.addSubview(privacyPolicyButton)
         view.addSubview(subscriptionLabel)
         view.addSubview(subscriptionTextView)
         view.addSubview(subscribeButton)
@@ -105,11 +133,20 @@ class SubscribeController: UIViewController {
         view.addConstraints([NSLayoutConstraint(item: backButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 31)])
         
         
-        view.addConstraints([NSLayoutConstraint(item: subscriptionLabel, attribute: .centerX, relatedBy: .equal, toItem: margin, attribute: .centerX, multiplier: 1, constant: 10)])
+        view.addConstraints([NSLayoutConstraint(item: privacyPolicyButton, attribute: .right, relatedBy: .equal, toItem: margin, attribute: .right, multiplier: 1, constant: -10)])
+        
+        view.addConstraints([NSLayoutConstraint(item: privacyPolicyButton, attribute: .top, relatedBy: .equal, toItem: margin, attribute: .top, multiplier: 1, constant: 30)])
+        
+        view.addConstraints([NSLayoutConstraint(item: privacyPolicyButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 150)])
+        
+        view.addConstraints([NSLayoutConstraint(item: privacyPolicyButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 31)])
+        
+        
+        view.addConstraints([NSLayoutConstraint(item: subscriptionLabel, attribute: .centerX, relatedBy: .equal, toItem: margin, attribute: .centerX, multiplier: 1, constant: 0)])
         
         view.addConstraints([NSLayoutConstraint(item: subscriptionLabel, attribute: .top, relatedBy: .equal, toItem: margin, attribute: .top, multiplier: 1, constant: 100)])
         
-        view.addConstraints([NSLayoutConstraint(item: subscriptionLabel, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 300)])
+        view.addConstraints([NSLayoutConstraint(item: subscriptionLabel, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: self.view.frame.width)])
         
         view.addConstraints([NSLayoutConstraint(item: subscriptionLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 27)])
         

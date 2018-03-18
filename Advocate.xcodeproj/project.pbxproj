@@ -34,6 +34,7 @@
 		A62E4EF0205C93AD00C72A56 /* PrivacyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EEF205C93AD00C72A56 /* PrivacyController.swift */; };
 		A62E4EF2205C964700C72A56 /* FileClaimTextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EF1205C964700C72A56 /* FileClaimTextController.swift */; };
 		A62E4EF4205D177800C72A56 /* SubscribeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EF3205D177700C72A56 /* SubscribeController.swift */; };
+		A62E4EF8205EDAB000C72A56 /* SubscriptionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EF7205EDAB000C72A56 /* SubscriptionText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		A62E4EEF205C93AD00C72A56 /* PrivacyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyController.swift; sourceTree = "<group>"; };
 		A62E4EF1205C964700C72A56 /* FileClaimTextController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileClaimTextController.swift; sourceTree = "<group>"; };
 		A62E4EF3205D177700C72A56 /* SubscribeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeController.swift; sourceTree = "<group>"; };
+		A62E4EF7205EDAB000C72A56 /* SubscriptionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				A62E4ECF205C7C2500C72A56 /* IAPHelper.swift */,
 				A62E4ED3205C7D0D00C72A56 /* Learn.swift */,
 				A62E4ED5205C7D5E00C72A56 /* Privacy.swift */,
+				A62E4EF7205EDAB000C72A56 /* SubscriptionText.swift */,
 				A62E4ED7205C7DFF00C72A56 /* TouchID.swift */,
 				A62E4EDB205C807100C72A56 /* FileTextStrings.swift */,
 				A62E4EDD205C810100C72A56 /* Login.swift */,
@@ -361,6 +364,7 @@
 				A62E4EE4205C8A2100C72A56 /* SignInCell.swift in Sources */,
 				A62E4EE0205C81CA00C72A56 /* LoginController.swift in Sources */,
 				A62E4EE6205C8B3C00C72A56 /* SignInController.swift in Sources */,
+				A62E4EF8205EDAB000C72A56 /* SubscriptionText.swift in Sources */,
 				A62E4ED0205C7C2500C72A56 /* IAPHelper.swift in Sources */,
 				A62E4EEC205C923F00C72A56 /* FileClaimController.swift in Sources */,
 				A62E4EF2205C964700C72A56 /* FileClaimTextController.swift in Sources */,
