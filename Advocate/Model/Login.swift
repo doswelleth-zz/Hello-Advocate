@@ -17,7 +17,7 @@ struct Page {
 
 struct Titles {
     let info = [
-        Page(logo: "Logo", title: "Legal representation for food industry workers for free", subtitle: "1 of 4"),
+        Page(logo: "Logo", title: "Legal representation for food service workers for free", subtitle: "1 of 4"),
         Page(logo: "Logo", title: "Privacy and discretion for clients according to US Law", subtitle: "2 of 4"),
         Page(logo: "Logo", title: "Community rating system for safe and healthy career choices", subtitle: "3 of 4"),
         Page(logo: "Logo", title: "Client-side encryption security for your peace of mind", subtitle: "4 of 4")
