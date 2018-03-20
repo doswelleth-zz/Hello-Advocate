@@ -40,6 +40,7 @@ class SettingsController: UIViewController {
     let usernameTextField : UITextField = {
         let textField = UITextField()
         textField.textColor = .black
+        textField.tintColor = .black
         textField.textAlignment = .center
         textField.font = UIFont.boldSystemFont(ofSize: 25)
         textField.attributedPlaceholder = NSAttributedString(string: usernameTextFieldPlaceholder, attributes: [NSAttributedStringKey.foregroundColor : UIColor.gray])
