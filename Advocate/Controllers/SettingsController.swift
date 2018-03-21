@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import SafariServices
 
 private let backButtonTitle = "◀︎"
 private let usernameTextFieldPlaceholder = "username"
@@ -105,13 +106,24 @@ class SettingsController: UIViewController {
     }
     
     @objc private func privacyButtonTap(sender: UIButton) {
-        let privacyController = PrivacyController()
-        self.navigationController?.pushViewController(privacyController, animated: true)
+            privacyButtonTap()
     }
     
     @objc func restoreButtonTap(sender: UIButton) {
         presentRestoreAlert()
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    func privacyButtonTap() {
+        if let url = URL(string: PrivacyPolicy().string) {
+            let configuration = SFSafariViewController.Configuration()
+            configuration.barCollapsingEnabled = false
+            
+            let safariViewController = SFSafariViewController(url: url, configuration: configuration)
+            safariViewController.preferredBarTintColor = .white
+            safariViewController.preferredControlTintColor = .black
+            present(safariViewController, animated: true)
+        }
     }
     
     func saveUserName() {
