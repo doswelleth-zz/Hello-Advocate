@@ -179,6 +179,7 @@ class ProfileController: UICollectionViewController, UICollectionViewDelegateFlo
     
     @objc private func makeFileClaimButtonVisible() {
         fileClaimButton.isHidden = false
+        print("NEW SUBSCRIBER 🎉")
     }
     
     private func presentLogOutAlert() {

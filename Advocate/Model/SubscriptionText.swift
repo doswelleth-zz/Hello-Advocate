@@ -17,9 +17,9 @@ Subscribe today for $4.99 a month to file unlimited claim applications to Advoca
 }
 
 struct TermsOfService {
-    let string = "https://github.com/davidoliverdoswell/Advocate/blob/master/TERMSOFSERVICE.md"
+    let string = "https://github.com/davidoliverdoswell/Advocate/blob/master/TERMS.md"
 }
 
 struct PrivacyPolicy {
-    let string = "https://github.com/davidoliverdoswell/Advocate/blob/master/README.md"
+    let string = "https://github.com/davidoliverdoswell/Advocate/blob/master/PRIVACY.md"
 }
