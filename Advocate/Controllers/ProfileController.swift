@@ -12,10 +12,10 @@ import StoreKit
 
 private let reuseIdentifier = "reuseIdentifier"
 private let logOutButtonTitle = "◀︎"
-private let fileClaimButtonTitle = "File a claim"
-private let learnButtonTitle = "Learn"
+private let getStartedButtonTitle = "Get Started"
 private let learnMoreButtonTitle = "Learn more"
 private let settingsButtonTitle = "Settings"
+private let fileClaimButtonTitle = "File a claim"
 
 private let alertTitle = "Confirm"
 private let messageTitle = "Log out?"
@@ -46,9 +46,9 @@ class ProfileController: UICollectionViewController, UICollectionViewDelegateFlo
         return label
     }()
     
-    let learnButton : UIButton = {
+    let getStartedButton : UIButton = {
         let button = UIButton(type: .system) as UIButton
-        button.setTitle(learnButtonTitle, for: .normal)
+        button.setTitle(getStartedButtonTitle, for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
         button.layer.cornerRadius = 25
@@ -57,7 +57,7 @@ class ProfileController: UICollectionViewController, UICollectionViewDelegateFlo
         button.backgroundColor = .white
         button.isUserInteractionEnabled = true
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(learnButtonTap(sender:)), for: .touchUpInside)
+        button.addTarget(self, action: #selector(getStartedButtonTap(sender:)), for: .touchUpInside)
         return button
     }()
     
@@ -144,6 +144,7 @@ class ProfileController: UICollectionViewController, UICollectionViewDelegateFlo
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        self.navigationController?.navigationBar.isHidden = true
         let notification = NotificationCenter.default
         notification.addObserver(self, selector: #selector(makeFileClaimButtonVisible), name: Notification.Name(Notif().name), object: nil)
     }
@@ -157,7 +158,7 @@ class ProfileController: UICollectionViewController, UICollectionViewDelegateFlo
         presentLogOutAlert()
     }
     
-    @objc private func learnButtonTap(sender: UIButton) {
+    @objc private func getStartedButtonTap(sender: UIButton) {
         let subscribeController = SubscribeController()
         self.navigationController?.pushViewController(subscribeController, animated: true)
     }
@@ -220,7 +221,7 @@ class ProfileController: UICollectionViewController, UICollectionViewDelegateFlo
         
         view.addSubview(logOutButton)
         view.addSubview(usernameLabel)
-        view.addSubview(learnButton)
+        view.addSubview(getStartedButton)
         view.addSubview(learnMoreButton)
         view.addSubview(settingsButton)
         view.addSubview(fileClaimButton)
@@ -245,18 +246,18 @@ class ProfileController: UICollectionViewController, UICollectionViewDelegateFlo
         view.addConstraints([NSLayoutConstraint(item: usernameLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 30)])
         
         
-        view.addConstraints([NSLayoutConstraint(item: learnButton, attribute: .centerX, relatedBy: .equal, toItem: margin, attribute: .centerX, multiplier: 1, constant: 0)])
+        view.addConstraints([NSLayoutConstraint(item: getStartedButton, attribute: .centerX, relatedBy: .equal, toItem: margin, attribute: .centerX, multiplier: 1, constant: 0)])
         
-        view.addConstraints([NSLayoutConstraint(item: learnButton, attribute: .bottom, relatedBy: .equal, toItem: usernameLabel, attribute: .bottom, multiplier: 1, constant: 75)])
+        view.addConstraints([NSLayoutConstraint(item: getStartedButton, attribute: .bottom, relatedBy: .equal, toItem: usernameLabel, attribute: .bottom, multiplier: 1, constant: 75)])
         
-        view.addConstraints([NSLayoutConstraint(item: learnButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 150)])
+        view.addConstraints([NSLayoutConstraint(item: getStartedButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 150)])
         
-        view.addConstraints([NSLayoutConstraint(item: learnButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 50)])
+        view.addConstraints([NSLayoutConstraint(item: getStartedButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 50)])
         
         
         view.addConstraints([NSLayoutConstraint(item: learnMoreButton, attribute: .centerX, relatedBy: .equal, toItem: margin, attribute: .centerX, multiplier: 1, constant: 0)])
         
-        view.addConstraints([NSLayoutConstraint(item: learnMoreButton, attribute: .bottom, relatedBy: .equal, toItem: learnButton, attribute: .bottom, multiplier: 1, constant: 75)])
+        view.addConstraints([NSLayoutConstraint(item: learnMoreButton, attribute: .bottom, relatedBy: .equal, toItem: getStartedButton, attribute: .bottom, multiplier: 1, constant: 75)])
         
         view.addConstraints([NSLayoutConstraint(item: learnMoreButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 150)])
         
