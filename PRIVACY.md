@@ -1,5 +1,8 @@
 # Privacy Policy
 
+![itunesartwork 3x](https://user-images.githubusercontent.com/25995735/37502084-8ea696de-28a7-11e8-8a5f-7b8e55596c94.png)
+
+
 Advocate respects your privacy and is committed to protect the personal information that you share with us. You may comfortably browse our app without giving us any information about yourself. Only when you file a claim may we need your personal information to provide services that you request, or you may have the option choose to provide us with your personal information. This policy describes how we collect and use your personal information.
 
 
