@@ -10,7 +10,6 @@ import UIKit
 import CloudKit
 
 private let backButtonTitle = "◀︎"
-private let claimBeginTitle = "***CLAIM FILED BEGIN***"
 private let namePlaceholder = "First name"
 private let emailPlaceholder = "Email"
 private let workPlaceHolder = "Employer"
