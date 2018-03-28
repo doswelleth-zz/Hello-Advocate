@@ -9,7 +9,7 @@
 import UIKit
 import SafariServices
 
-private let navigationTitle = "Membership"
+private let navigationTitle = "Advocate Membership"
 private let navigationItemTitle = "◀︎"
 private let subscribeButtonTitle = "Subscribe $4.99/mo."
 private let termsOfServiceTitle = "Terms of Service"
@@ -108,7 +108,15 @@ class SubscribeController: UIViewController {
         let label = UILabel()
         label.text = """
         
-        Payment will be charged to the user's iTunes account at confirmation of purchase. Subscription to Membership automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period. Auto-renewal may be turned off by going to the user's Account Settings after purchase. No cancellation of the current subscription is allowed during the active subscription period. Any unused portion of a free trial period, if offered, will be forfeited when a user purchases a subscription to that publication, where applicable.
+        Payment of $4.99 will be charged to the user's iTunes account at confirmation of purchase.
+        
+        Subscription to Advocate Membership automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period.
+        
+        Auto-renewal may be turned off by going to the user's Account Settings after purchase.
+        
+        No cancellation of the current subscription is allowed during the active subscription period.
+        
+        Any unused portion of a free trial period, if offered, will be forfeited when a user purchases a subscription to that publication, where applicable.
 
 """
         label.font = UIFont.systemFont(ofSize: 12)
@@ -121,7 +129,7 @@ class SubscribeController: UIViewController {
         return label
     }()
     
-    let termsOfService : UIButton = {
+    let termsOfServiceButton : UIButton = {
         let button = UIButton(type: .system) as UIButton
         button.setTitle(termsOfServiceTitle, for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -134,7 +142,7 @@ class SubscribeController: UIViewController {
         return button
     }()
     
-    let privacyButton : UIButton = {
+    let privacyPolicyButton : UIButton = {
         let button = UIButton(type: .system) as UIButton
         button.setTitle(privacyButtonTitle, for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -213,27 +221,36 @@ class SubscribeController: UIViewController {
         }
     }
     
+    let scrollView = UIScrollView(frame: UIScreen.main.bounds)
+
     private func setUpViews() {
         
         view.backgroundColor = .white
         
-        view.addSubview(containerView)
-        view.addSubview(subscribeButton)
-        view.addSubview(unlimitedFileClaimImage)
-        view.addSubview(unlimitedFileClaimLabel)
-        view.addSubview(freeLegalServicesImage)
-        view.addSubview(freeLegalServicesLabel)
-        view.addSubview(communityRatingsImage)
-        view.addSubview(communityRatingsLabel)
-        view.addSubview(autoRenewMessageLabel)
-//        view.addSubview(termsOfService)
-//        view.addSubview(privacyButton)
-//
-        let margin = view.layoutMarginsGuide
+        scrollView.isScrollEnabled = true
+        scrollView.backgroundColor = .white
+        scrollView.alwaysBounceVertical = true
+        scrollView.isUserInteractionEnabled = true
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.contentSize = CGSize(width: self.view.frame.size.width, height: 800)
+        self.view.addSubview(scrollView)
         
-        view.addConstraints([NSLayoutConstraint(item: containerView, attribute: .centerX, relatedBy: .equal, toItem: margin, attribute: .centerX, multiplier: 1, constant: 0)])
+        scrollView.addSubview(containerView)
+        scrollView.addSubview(subscribeButton)
+        scrollView.addSubview(unlimitedFileClaimImage)
+        scrollView.addSubview(unlimitedFileClaimLabel)
+        scrollView.addSubview(freeLegalServicesImage)
+        scrollView.addSubview(freeLegalServicesLabel)
+        scrollView.addSubview(communityRatingsImage)
+        scrollView.addSubview(communityRatingsLabel)
+        scrollView.addSubview(autoRenewMessageLabel)
+        scrollView.addSubview(termsOfServiceButton)
+        scrollView.addSubview(privacyPolicyButton)
+
         
-        view.addConstraints([NSLayoutConstraint(item: containerView, attribute: .centerY, relatedBy: .equal, toItem: margin, attribute: .centerY, multiplier: 1, constant: 0)])
+        view.addConstraints([NSLayoutConstraint(item: containerView, attribute: .centerX, relatedBy: .equal, toItem: scrollView, attribute: .centerX, multiplier: 1, constant: 0)])
+        
+        view.addConstraints([NSLayoutConstraint(item: containerView, attribute: .centerY, relatedBy: .equal, toItem: scrollView, attribute: .centerY, multiplier: 1, constant: 0)])
         
         view.addConstraints([NSLayoutConstraint(item: containerView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: self.view.frame.width)])
         
@@ -312,22 +329,22 @@ class SubscribeController: UIViewController {
         view.addConstraints([NSLayoutConstraint(item: autoRenewMessageLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 200)])
         
         
-//        view.addConstraints([NSLayoutConstraint(item: termsOfService, attribute: .left, relatedBy: .equal, toItem: containerView, attribute: .left, multiplier: 1, constant: 10)])
-//
-//        view.addConstraints([NSLayoutConstraint(item: termsOfService, attribute: .bottom, relatedBy: .equal, toItem: autoRenewMessageLabel, attribute: .bottom, multiplier: 1, constant: 40)])
-//
-//        view.addConstraints([NSLayoutConstraint(item: termsOfService, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 150)])
-//
-//        view.addConstraints([NSLayoutConstraint(item: termsOfService, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 18)])
-//
-//
-//        view.addConstraints([NSLayoutConstraint(item: privacyButton, attribute: .right, relatedBy: .equal, toItem: containerView, attribute: .right, multiplier: 1, constant: -10)])
-//
-//        view.addConstraints([NSLayoutConstraint(item: privacyButton, attribute: .bottom, relatedBy: .equal, toItem: autoRenewMessageLabel, attribute: .bottom, multiplier: 1, constant: 40)])
-//
-//        view.addConstraints([NSLayoutConstraint(item: privacyButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 150)])
-//
-//        view.addConstraints([NSLayoutConstraint(item: privacyButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 18)])
+        view.addConstraints([NSLayoutConstraint(item: termsOfServiceButton, attribute: .left, relatedBy: .equal, toItem: containerView, attribute: .left, multiplier: 1, constant: 10)])
+
+        view.addConstraints([NSLayoutConstraint(item: termsOfServiceButton, attribute: .bottom, relatedBy: .equal, toItem: autoRenewMessageLabel, attribute: .bottom, multiplier: 1, constant: 40)])
+
+        view.addConstraints([NSLayoutConstraint(item: termsOfServiceButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 150)])
+
+        view.addConstraints([NSLayoutConstraint(item: termsOfServiceButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 18)])
+
+
+        view.addConstraints([NSLayoutConstraint(item: privacyPolicyButton, attribute: .right, relatedBy: .equal, toItem: containerView, attribute: .right, multiplier: 1, constant: -10)])
+
+        view.addConstraints([NSLayoutConstraint(item: privacyPolicyButton, attribute: .bottom, relatedBy: .equal, toItem: autoRenewMessageLabel, attribute: .bottom, multiplier: 1, constant: 40)])
+
+        view.addConstraints([NSLayoutConstraint(item: privacyPolicyButton, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 150)])
+
+        view.addConstraints([NSLayoutConstraint(item: privacyPolicyButton, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 18)])
     }
     
     override func didReceiveMemoryWarning() {

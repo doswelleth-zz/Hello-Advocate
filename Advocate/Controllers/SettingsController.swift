@@ -143,6 +143,7 @@ class SettingsController: UIViewController {
         let alert = UIAlertController(title: restoreAlertTitle, message: restoreMessageTitle, preferredStyle: .alert)
         let restore = UIAlertAction(title: restoreActionTitle, style: .default) { (action) in
             IAPHelper.shared.restorePurchases()
+            self.navigationController?.popViewController(animated: true)
         }
         let dismiss = UIAlertAction(title: dismissActionTitle, style: .default) { (action) in
         }

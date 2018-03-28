@@ -32,9 +32,10 @@
 		A62E4EEC205C923F00C72A56 /* FileClaimController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EEB205C923F00C72A56 /* FileClaimController.swift */; };
 		A62E4EEE205C92D600C72A56 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EED205C92D600C72A56 /* SettingsController.swift */; };
 		A62E4EF0205C93AD00C72A56 /* PrivacyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EEF205C93AD00C72A56 /* PrivacyController.swift */; };
-		A62E4EF2205C964700C72A56 /* FileClaimTextController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EF1205C964700C72A56 /* FileClaimTextController.swift */; };
 		A62E4EF4205D177800C72A56 /* SubscribeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EF3205D177700C72A56 /* SubscribeController.swift */; };
 		A62E4EF8205EDAB000C72A56 /* SubscriptionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EF7205EDAB000C72A56 /* SubscriptionText.swift */; };
+		A6C59F2820699A8500112078 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C59F2720699A8500112078 /* CloudKit.framework */; };
+		A6C59F2C2069A01A00112078 /* CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C59F2B2069A01A00112078 /* CloudKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,9 +87,11 @@
 		A62E4EEB205C923F00C72A56 /* FileClaimController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileClaimController.swift; sourceTree = "<group>"; };
 		A62E4EED205C92D600C72A56 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		A62E4EEF205C93AD00C72A56 /* PrivacyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyController.swift; sourceTree = "<group>"; };
-		A62E4EF1205C964700C72A56 /* FileClaimTextController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileClaimTextController.swift; sourceTree = "<group>"; };
 		A62E4EF3205D177700C72A56 /* SubscribeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeController.swift; sourceTree = "<group>"; };
 		A62E4EF7205EDAB000C72A56 /* SubscriptionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionText.swift; sourceTree = "<group>"; };
+		A6C59F2620699A5F00112078 /* Advocate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Advocate.entitlements; sourceTree = "<group>"; };
+		A6C59F2720699A8500112078 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		A6C59F2B2069A01A00112078 /* CloudKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A62E4EC9205C7AFD00C72A56 /* StoreKit.framework in Frameworks */,
+				A6C59F2820699A8500112078 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +145,7 @@
 		A62E4E95205C768500C72A56 /* Advocate */ = {
 			isa = PBXGroup;
 			children = (
+				A6C59F2620699A5F00112078 /* Advocate.entitlements */,
 				A62E4E96205C768500C72A56 /* AppDelegate.swift */,
 				A62E4E9D205C768500C72A56 /* Advocate.xcdatamodeld */,
 				A62E4ED9205C7FA500C72A56 /* KeychainPasswordItem.swift */,
@@ -173,6 +178,7 @@
 		A62E4EC7205C7AFD00C72A56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A6C59F2720699A8500112078 /* CloudKit.framework */,
 				A62E4EC8205C7AFD00C72A56 /* StoreKit.framework */,
 			);
 			name = Frameworks;
@@ -181,6 +187,7 @@
 		A62E4ECA205C7B1400C72A56 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A6C59F2B2069A01A00112078 /* CloudKit.swift */,
 				A62E4ECD205C7BAB00C72A56 /* IAPMembership.swift */,
 				A62E4ECF205C7C2500C72A56 /* IAPHelper.swift */,
 				A62E4ED3205C7D0D00C72A56 /* Learn.swift */,
@@ -216,7 +223,6 @@
 				A62E4EED205C92D600C72A56 /* SettingsController.swift */,
 				A62E4EEB205C923F00C72A56 /* FileClaimController.swift */,
 				A62E4EEF205C93AD00C72A56 /* PrivacyController.swift */,
-				A62E4EF1205C964700C72A56 /* FileClaimTextController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -294,6 +300,12 @@
 							com.apple.InAppPurchase = {
 								enabled = 1;
 							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
 						};
 					};
 					A62E4EA9205C768500C72A56 = {
@@ -367,7 +379,6 @@
 				A62E4EF8205EDAB000C72A56 /* SubscriptionText.swift in Sources */,
 				A62E4ED0205C7C2500C72A56 /* IAPHelper.swift in Sources */,
 				A62E4EEC205C923F00C72A56 /* FileClaimController.swift in Sources */,
-				A62E4EF2205C964700C72A56 /* FileClaimTextController.swift in Sources */,
 				A62E4ED2205C7C7B00C72A56 /* Notification.swift in Sources */,
 				A62E4ED4205C7D0D00C72A56 /* Learn.swift in Sources */,
 				A62E4EE8205C8B8B00C72A56 /* ProfileController.swift in Sources */,
@@ -377,6 +388,7 @@
 				A62E4EDA205C7FA600C72A56 /* KeychainPasswordItem.swift in Sources */,
 				A62E4E97205C768500C72A56 /* AppDelegate.swift in Sources */,
 				A62E4EF4205D177800C72A56 /* SubscribeController.swift in Sources */,
+				A6C59F2C2069A01A00112078 /* CloudKit.swift in Sources */,
 				A62E4EDC205C807100C72A56 /* FileTextStrings.swift in Sources */,
 				A62E4EEE205C92D600C72A56 /* SettingsController.swift in Sources */,
 				A62E4ED6205C7D5E00C72A56 /* Privacy.swift in Sources */,
@@ -539,6 +551,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Advocate/Advocate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 583SEL8QQU;
 				INFOPLIST_FILE = Advocate/Info.plist;
@@ -554,6 +567,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Advocate/Advocate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 583SEL8QQU;
 				INFOPLIST_FILE = Advocate/Info.plist;
