@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430AE03A3B933F8FD2FC66C8 /* Pods_AdvocateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51AD563BF5B0449689AABF4 /* Pods_AdvocateUITests.framework */; };
+		4953BF8D233831B000A7F174 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4953BF8C233831B000A7F174 /* Message.swift */; };
+		4953BF902338336F00A7F174 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4953BF8F2338336F00A7F174 /* NewMessageController.swift */; };
+		4953BF942338342500A7F174 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4953BF932338342500A7F174 /* MessagesController.swift */; };
+		4953BF96233834BD00A7F174 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4953BF95233834BD00A7F174 /* UserCell.swift */; };
+		4953BF98233834FB00A7F174 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4953BF97233834FB00A7F174 /* ChatMessageCell.swift */; };
+		4953BF9A2338352300A7F174 /* ChatInputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4953BF992338352300A7F174 /* ChatInputContainerView.swift */; };
+		4953BF9C2338359B00A7F174 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4953BF9B2338359B00A7F174 /* ChatLogController.swift */; };
+		4964D9D1231DD40C007FE0FC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964D9D0231DD40C007FE0FC /* Extensions.swift */; };
+		4964D9D4231DD4B1007FE0FC /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964D9D3231DD4B1007FE0FC /* Appearance.swift */; };
+		4964D9D8231E19F8007FE0FC /* Terms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964D9D7231E19F8007FE0FC /* Terms.swift */; };
+		4964D9DA231E1C55007FE0FC /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964D9D9231E1C55007FE0FC /* Privacy.swift */; };
+		4964D9DC231E1E5E007FE0FC /* TermsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964D9DB231E1E5E007FE0FC /* TermsController.swift */; };
+		49BF715D231E1F4700B2D78C /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BF715C231E1F4700B2D78C /* Strings.swift */; };
+		49BF715F231E1F9F00B2D78C /* PrivacyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BF715E231E1F9F00B2D78C /* PrivacyController.swift */; };
+		49BF716123217F6800B2D78C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49BF716023217F6800B2D78C /* GoogleService-Info.plist */; };
+		49DDC10A233C564600CB6CD6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DDC109233C564600CB6CD6 /* User.swift */; };
+		49DDC1112342E31E00CB6CD6 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DDC1102342E31E00CB6CD6 /* SettingsController.swift */; };
+		49EA7C4A2333224C00A92C36 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EA7C492333224C00A92C36 /* WelcomeController.swift */; };
+		49EA7C5223332B7B00A92C36 /* LawyerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EA7C5123332B7B00A92C36 /* LawyerCell.swift */; };
+		49EA7C5823333DBB00A92C36 /* Lawyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EA7C5723333DBB00A92C36 /* Lawyer.swift */; };
+		49EA7C5A23333E0B00A92C36 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EA7C5923333E0B00A92C36 /* TabBarController.swift */; };
+		49EA7C5D2333403A00A92C36 /* LawyerDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EA7C5C2333403A00A92C36 /* LawyerDetailController.swift */; };
+		49EA7C6B2335BE7E00A92C36 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EA7C6A2335BE7E00A92C36 /* SignUpController.swift */; };
+		49EA7C6D2335BEE800A92C36 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EA7C6C2335BEE800A92C36 /* LoginController.swift */; };
+		49EA7C732335D3EC00A92C36 /* LawyerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EA7C722335D3EC00A92C36 /* LawyerController.swift */; };
+		49EA7C752335D6F100A92C36 /* NewLawyerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EA7C742335D6F100A92C36 /* NewLawyerController.swift */; };
+		9F9ECB5A53253C611CE9720C /* Pods_Advocate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117E7DE69C8BC6DC7F5BBC44 /* Pods_Advocate.framework */; };
 		A62E4E97205C768500C72A56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4E96205C768500C72A56 /* AppDelegate.swift */; };
 		A62E4E9F205C768500C72A56 /* Advocate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A62E4E9D205C768500C72A56 /* Advocate.xcdatamodeld */; };
 		A62E4EA1205C768500C72A56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A62E4EA0205C768500C72A56 /* Assets.xcassets */; };
@@ -16,27 +44,11 @@
 		A62E4EC9205C7AFD00C72A56 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62E4EC8205C7AFD00C72A56 /* StoreKit.framework */; };
 		A62E4ECE205C7BAB00C72A56 /* IAPMembership.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4ECD205C7BAB00C72A56 /* IAPMembership.swift */; };
 		A62E4ED0205C7C2500C72A56 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4ECF205C7C2500C72A56 /* IAPHelper.swift */; };
-		A62E4ED2205C7C7B00C72A56 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4ED1205C7C7B00C72A56 /* Notification.swift */; };
-		A62E4ED4205C7D0D00C72A56 /* Learn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4ED3205C7D0D00C72A56 /* Learn.swift */; };
-		A62E4ED6205C7D5E00C72A56 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4ED5205C7D5E00C72A56 /* Privacy.swift */; };
 		A62E4ED8205C7DFF00C72A56 /* TouchID.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4ED7205C7DFF00C72A56 /* TouchID.swift */; };
 		A62E4EDA205C7FA600C72A56 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4ED9205C7FA500C72A56 /* KeychainPasswordItem.swift */; };
-		A62E4EDC205C807100C72A56 /* FileTextStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EDB205C807100C72A56 /* FileTextStrings.swift */; };
-		A62E4EDE205C810100C72A56 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EDD205C810100C72A56 /* Login.swift */; };
-		A62E4EE0205C81CA00C72A56 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EDF205C81CA00C72A56 /* LoginController.swift */; };
-		A62E4EE2205C896E00C72A56 /* LoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EE1205C896E00C72A56 /* LoginCell.swift */; };
-		A62E4EE4205C8A2100C72A56 /* SignInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EE3205C8A2100C72A56 /* SignInCell.swift */; };
-		A62E4EE6205C8B3C00C72A56 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EE5205C8B3C00C72A56 /* SignInController.swift */; };
-		A62E4EE8205C8B8B00C72A56 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EE7205C8B8B00C72A56 /* ProfileController.swift */; };
-		A62E4EEA205C912400C72A56 /* LearnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EE9205C912400C72A56 /* LearnController.swift */; };
-		A62E4EEC205C923F00C72A56 /* FileClaimController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EEB205C923F00C72A56 /* FileClaimController.swift */; };
-		A62E4EEE205C92D600C72A56 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EED205C92D600C72A56 /* SettingsController.swift */; };
-		A62E4EF0205C93AD00C72A56 /* PrivacyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EEF205C93AD00C72A56 /* PrivacyController.swift */; };
 		A62E4EF4205D177800C72A56 /* SubscribeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EF3205D177700C72A56 /* SubscribeController.swift */; };
-		A62E4EF8205EDAB000C72A56 /* SubscriptionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62E4EF7205EDAB000C72A56 /* SubscriptionText.swift */; };
-		A67FBD58206DB5FF00BCD13B /* Ratings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67FBD57206DB5FE00BCD13B /* Ratings.swift */; };
 		A6C59F2820699A8500112078 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C59F2720699A8500112078 /* CloudKit.framework */; };
-		A6C59F2C2069A01A00112078 /* CloudKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C59F2B2069A01A00112078 /* CloudKit.swift */; };
+		AAD2A01F1E950086D13AEFAC /* Pods_AdvocateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791349E09106243C6361C6FC /* Pods_AdvocateTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +69,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A62E4E93205C768500C72A56 /* Advocate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Advocate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B62A9D6142704768858BA2D /* Pods-AdvocateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvocateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdvocateTests/Pods-AdvocateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		117E7DE69C8BC6DC7F5BBC44 /* Pods_Advocate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Advocate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		289A658BD46B020904C997FF /* Pods-AdvocateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvocateUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdvocateUITests/Pods-AdvocateUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3599287D838A36AF34CDB006 /* Pods-Advocate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advocate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Advocate/Pods-Advocate.debug.xcconfig"; sourceTree = "<group>"; };
+		3B041F9DD3E668A469A567A9 /* Pods-AdvocateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvocateUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdvocateUITests/Pods-AdvocateUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3DFA866744498F416F9A5AA2 /* Pods-Advocate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Advocate.release.xcconfig"; path = "Pods/Target Support Files/Pods-Advocate/Pods-Advocate.release.xcconfig"; sourceTree = "<group>"; };
+		4953BF8C233831B000A7F174 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		4953BF8F2338336F00A7F174 /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		4953BF932338342500A7F174 /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
+		4953BF95233834BD00A7F174 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		4953BF97233834FB00A7F174 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		4953BF992338352300A7F174 /* ChatInputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputContainerView.swift; sourceTree = "<group>"; };
+		4953BF9B2338359B00A7F174 /* ChatLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
+		4964D9D0231DD40C007FE0FC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4964D9D3231DD4B1007FE0FC /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		4964D9D7231E19F8007FE0FC /* Terms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Terms.swift; sourceTree = "<group>"; };
+		4964D9D9231E1C55007FE0FC /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
+		4964D9DB231E1E5E007FE0FC /* TermsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsController.swift; sourceTree = "<group>"; };
+		49BF715C231E1F4700B2D78C /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		49BF715E231E1F9F00B2D78C /* PrivacyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyController.swift; sourceTree = "<group>"; };
+		49BF716023217F6800B2D78C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49DDC109233C564600CB6CD6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		49DDC1102342E31E00CB6CD6 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		49EA7C492333224C00A92C36 /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
+		49EA7C5123332B7B00A92C36 /* LawyerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerCell.swift; sourceTree = "<group>"; };
+		49EA7C5723333DBB00A92C36 /* Lawyer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lawyer.swift; sourceTree = "<group>"; };
+		49EA7C5923333E0B00A92C36 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		49EA7C5C2333403A00A92C36 /* LawyerDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerDetailController.swift; sourceTree = "<group>"; };
+		49EA7C6A2335BE7E00A92C36 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		49EA7C6C2335BEE800A92C36 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		49EA7C722335D3EC00A92C36 /* LawyerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerController.swift; sourceTree = "<group>"; };
+		49EA7C742335D6F100A92C36 /* NewLawyerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLawyerController.swift; sourceTree = "<group>"; };
+		4A39783CFFD2E6D437A38FA7 /* Pods-AdvocateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdvocateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AdvocateTests/Pods-AdvocateTests.release.xcconfig"; sourceTree = "<group>"; };
+		791349E09106243C6361C6FC /* Pods_AdvocateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvocateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62E4E93205C768500C72A56 /* Hello Advocate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello Advocate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62E4E96205C768500C72A56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A62E4E9E205C768500C72A56 /* Advocate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Advocate.xcdatamodel; sourceTree = "<group>"; };
 		A62E4EA0205C768500C72A56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,28 +118,12 @@
 		A62E4EC8205C7AFD00C72A56 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		A62E4ECD205C7BAB00C72A56 /* IAPMembership.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPMembership.swift; sourceTree = "<group>"; };
 		A62E4ECF205C7C2500C72A56 /* IAPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
-		A62E4ED1205C7C7B00C72A56 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
-		A62E4ED3205C7D0D00C72A56 /* Learn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learn.swift; sourceTree = "<group>"; };
-		A62E4ED5205C7D5E00C72A56 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
 		A62E4ED7205C7DFF00C72A56 /* TouchID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchID.swift; sourceTree = "<group>"; };
 		A62E4ED9205C7FA500C72A56 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
-		A62E4EDB205C807100C72A56 /* FileTextStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTextStrings.swift; sourceTree = "<group>"; };
-		A62E4EDD205C810100C72A56 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		A62E4EDF205C81CA00C72A56 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		A62E4EE1205C896E00C72A56 /* LoginCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCell.swift; sourceTree = "<group>"; };
-		A62E4EE3205C8A2100C72A56 /* SignInCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCell.swift; sourceTree = "<group>"; };
-		A62E4EE5205C8B3C00C72A56 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
-		A62E4EE7205C8B8B00C72A56 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
-		A62E4EE9205C912400C72A56 /* LearnController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnController.swift; sourceTree = "<group>"; };
-		A62E4EEB205C923F00C72A56 /* FileClaimController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileClaimController.swift; sourceTree = "<group>"; };
-		A62E4EED205C92D600C72A56 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		A62E4EEF205C93AD00C72A56 /* PrivacyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyController.swift; sourceTree = "<group>"; };
 		A62E4EF3205D177700C72A56 /* SubscribeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeController.swift; sourceTree = "<group>"; };
-		A62E4EF7205EDAB000C72A56 /* SubscriptionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionText.swift; sourceTree = "<group>"; };
-		A67FBD57206DB5FE00BCD13B /* Ratings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ratings.swift; sourceTree = "<group>"; };
 		A6C59F2620699A5F00112078 /* Advocate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Advocate.entitlements; sourceTree = "<group>"; };
 		A6C59F2720699A8500112078 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
-		A6C59F2B2069A01A00112078 /* CloudKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKit.swift; sourceTree = "<group>"; };
+		D51AD563BF5B0449689AABF4 /* Pods_AdvocateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvocateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +133,7 @@
 			files = (
 				A62E4EC9205C7AFD00C72A56 /* StoreKit.framework in Frameworks */,
 				A6C59F2820699A8500112078 /* CloudKit.framework in Frameworks */,
+				9F9ECB5A53253C611CE9720C /* Pods_Advocate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD2A01F1E950086D13AEFAC /* Pods_AdvocateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,12 +149,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430AE03A3B933F8FD2FC66C8 /* Pods_AdvocateUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		494D5F83232B6EDA0089873B /* User */ = {
+			isa = PBXGroup;
+			children = (
+				49DDC109233C564600CB6CD6 /* User.swift */,
+				49EA7C5723333DBB00A92C36 /* Lawyer.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		4964D9CF231DD3EB007FE0FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4964D9D0231DD40C007FE0FC /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4964D9D2231DD4A2007FE0FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A62E4E96205C768500C72A56 /* AppDelegate.swift */,
+				4964D9D3231DD4B1007FE0FC /* Appearance.swift */,
+				49BF715C231E1F4700B2D78C /* Strings.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4964D9D5231DD4DD007FE0FC /* TouchID */ = {
+			isa = PBXGroup;
+			children = (
+				A62E4ED7205C7DFF00C72A56 /* TouchID.swift */,
+				A62E4ED9205C7FA500C72A56 /* KeychainPasswordItem.swift */,
+			);
+			path = TouchID;
+			sourceTree = "<group>";
+		};
+		4964D9D6231E19DC007FE0FC /* Compliance */ = {
+			isa = PBXGroup;
+			children = (
+				4964D9D7231E19F8007FE0FC /* Terms.swift */,
+				4964D9D9231E1C55007FE0FC /* Privacy.swift */,
+			);
+			path = Compliance;
+			sourceTree = "<group>";
+		};
+		49DDC10B233C5F4C00CB6CD6 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				4953BF932338342500A7F174 /* MessagesController.swift */,
+				4953BF8F2338336F00A7F174 /* NewMessageController.swift */,
+				4953BF9B2338359B00A7F174 /* ChatLogController.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		49EA7C5B23333E1800A92C36 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				49EA7C5923333E0B00A92C36 /* TabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
 		A62E4E8A205C768500C72A56 = {
 			isa = PBXGroup;
 			children = (
@@ -131,13 +227,14 @@
 				A62E4EB8205C768500C72A56 /* AdvocateUITests */,
 				A62E4E94205C768500C72A56 /* Products */,
 				A62E4EC7205C7AFD00C72A56 /* Frameworks */,
+				ABE05C2F0DF63C92EE94EED9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		A62E4E94205C768500C72A56 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A62E4E93205C768500C72A56 /* Advocate.app */,
+				A62E4E93205C768500C72A56 /* Hello Advocate.app */,
 				A62E4EAA205C768500C72A56 /* AdvocateTests.xctest */,
 				A62E4EB5205C768500C72A56 /* AdvocateUITests.xctest */,
 			);
@@ -147,14 +244,19 @@
 		A62E4E95205C768500C72A56 /* Advocate */ = {
 			isa = PBXGroup;
 			children = (
+				A62E4EA5205C768500C72A56 /* Info.plist */,
+				49BF716023217F6800B2D78C /* GoogleService-Info.plist */,
 				A6C59F2620699A5F00112078 /* Advocate.entitlements */,
-				A62E4E96205C768500C72A56 /* AppDelegate.swift */,
-				A62E4E9D205C768500C72A56 /* Advocate.xcdatamodeld */,
-				A62E4ED9205C7FA500C72A56 /* KeychainPasswordItem.swift */,
+				4964D9D6231E19DC007FE0FC /* Compliance */,
+				4964D9D2231DD4A2007FE0FC /* Resources */,
+				4964D9D5231DD4DD007FE0FC /* TouchID */,
+				494D5F83232B6EDA0089873B /* User */,
 				A62E4ECA205C7B1400C72A56 /* Model */,
 				A62E4ECB205C7B1C00C72A56 /* Views */,
+				49EA7C5B23333E1800A92C36 /* TabBarController */,
 				A62E4ECC205C7B2300C72A56 /* Controllers */,
-				A62E4EA5205C768500C72A56 /* Info.plist */,
+				49DDC10B233C5F4C00CB6CD6 /* Messages */,
+				4964D9CF231DD3EB007FE0FC /* Extensions */,
 			);
 			path = Advocate;
 			sourceTree = "<group>";
@@ -182,6 +284,9 @@
 			children = (
 				A6C59F2720699A8500112078 /* CloudKit.framework */,
 				A62E4EC8205C7AFD00C72A56 /* StoreKit.framework */,
+				117E7DE69C8BC6DC7F5BBC44 /* Pods_Advocate.framework */,
+				791349E09106243C6361C6FC /* Pods_AdvocateTests.framework */,
+				D51AD563BF5B0449689AABF4 /* Pods_AdvocateUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,17 +294,10 @@
 		A62E4ECA205C7B1400C72A56 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A6C59F2B2069A01A00112078 /* CloudKit.swift */,
+				A62E4E9D205C768500C72A56 /* Advocate.xcdatamodeld */,
 				A62E4ECD205C7BAB00C72A56 /* IAPMembership.swift */,
 				A62E4ECF205C7C2500C72A56 /* IAPHelper.swift */,
-				A62E4ED3205C7D0D00C72A56 /* Learn.swift */,
-				A62E4ED5205C7D5E00C72A56 /* Privacy.swift */,
-				A62E4EF7205EDAB000C72A56 /* SubscriptionText.swift */,
-				A67FBD57206DB5FE00BCD13B /* Ratings.swift */,
-				A62E4ED7205C7DFF00C72A56 /* TouchID.swift */,
-				A62E4EDB205C807100C72A56 /* FileTextStrings.swift */,
-				A62E4EDD205C810100C72A56 /* Login.swift */,
-				A62E4ED1205C7C7B00C72A56 /* Notification.swift */,
+				4953BF8C233831B000A7F174 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,8 +307,10 @@
 			children = (
 				A62E4EA0205C768500C72A56 /* Assets.xcassets */,
 				A62E4EA2205C768500C72A56 /* LaunchScreen.storyboard */,
-				A62E4EE1205C896E00C72A56 /* LoginCell.swift */,
-				A62E4EE3205C8A2100C72A56 /* SignInCell.swift */,
+				4953BF95233834BD00A7F174 /* UserCell.swift */,
+				49EA7C5123332B7B00A92C36 /* LawyerCell.swift */,
+				4953BF97233834FB00A7F174 /* ChatMessageCell.swift */,
+				4953BF992338352300A7F174 /* ChatInputContainerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,16 +318,31 @@
 		A62E4ECC205C7B2300C72A56 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A62E4EDF205C81CA00C72A56 /* LoginController.swift */,
-				A62E4EE5205C8B3C00C72A56 /* SignInController.swift */,
-				A62E4EE7205C8B8B00C72A56 /* ProfileController.swift */,
+				49EA7C492333224C00A92C36 /* WelcomeController.swift */,
+				49EA7C6C2335BEE800A92C36 /* LoginController.swift */,
+				49EA7C6A2335BE7E00A92C36 /* SignUpController.swift */,
+				49EA7C722335D3EC00A92C36 /* LawyerController.swift */,
+				49EA7C5C2333403A00A92C36 /* LawyerDetailController.swift */,
+				49EA7C742335D6F100A92C36 /* NewLawyerController.swift */,
+				49DDC1102342E31E00CB6CD6 /* SettingsController.swift */,
 				A62E4EF3205D177700C72A56 /* SubscribeController.swift */,
-				A62E4EE9205C912400C72A56 /* LearnController.swift */,
-				A62E4EED205C92D600C72A56 /* SettingsController.swift */,
-				A62E4EEB205C923F00C72A56 /* FileClaimController.swift */,
-				A62E4EEF205C93AD00C72A56 /* PrivacyController.swift */,
+				4964D9DB231E1E5E007FE0FC /* TermsController.swift */,
+				49BF715E231E1F9F00B2D78C /* PrivacyController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ABE05C2F0DF63C92EE94EED9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3599287D838A36AF34CDB006 /* Pods-Advocate.debug.xcconfig */,
+				3DFA866744498F416F9A5AA2 /* Pods-Advocate.release.xcconfig */,
+				0B62A9D6142704768858BA2D /* Pods-AdvocateTests.debug.xcconfig */,
+				4A39783CFFD2E6D437A38FA7 /* Pods-AdvocateTests.release.xcconfig */,
+				3B041F9DD3E668A469A567A9 /* Pods-AdvocateUITests.debug.xcconfig */,
+				289A658BD46B020904C997FF /* Pods-AdvocateUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,9 +352,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A62E4EBE205C768500C72A56 /* Build configuration list for PBXNativeTarget "Advocate" */;
 			buildPhases = (
+				DB0943B2FE019ECD3C08BB9F /* [CP] Check Pods Manifest.lock */,
 				A62E4E8F205C768500C72A56 /* Sources */,
 				A62E4E90205C768500C72A56 /* Frameworks */,
 				A62E4E91205C768500C72A56 /* Resources */,
+				2BC640696AD69AFE5025CC6E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,13 +364,14 @@
 			);
 			name = Advocate;
 			productName = Advocate;
-			productReference = A62E4E93205C768500C72A56 /* Advocate.app */;
+			productReference = A62E4E93205C768500C72A56 /* Hello Advocate.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A62E4EA9205C768500C72A56 /* AdvocateTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A62E4EC1205C768500C72A56 /* Build configuration list for PBXNativeTarget "AdvocateTests" */;
 			buildPhases = (
+				7C0727978AF220CBB8EB6BB5 /* [CP] Check Pods Manifest.lock */,
 				A62E4EA6205C768500C72A56 /* Sources */,
 				A62E4EA7205C768500C72A56 /* Frameworks */,
 				A62E4EA8205C768500C72A56 /* Resources */,
@@ -272,6 +390,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A62E4EC4205C768500C72A56 /* Build configuration list for PBXNativeTarget "AdvocateUITests" */;
 			buildPhases = (
+				DDC5657029A8BC376FFC0EFD /* [CP] Check Pods Manifest.lock */,
 				A62E4EB1205C768500C72A56 /* Sources */,
 				A62E4EB2205C768500C72A56 /* Frameworks */,
 				A62E4EB3205C768500C72A56 /* Resources */,
@@ -293,11 +412,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "David Oliver Doswell";
 				TargetAttributes = {
 					A62E4E92205C768500C72A56 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
@@ -313,11 +433,13 @@
 					};
 					A62E4EA9205C768500C72A56 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A62E4E92205C768500C72A56;
 					};
 					A62E4EB4205C768500C72A56 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 						TestTargetID = A62E4E92205C768500C72A56;
 					};
@@ -348,6 +470,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BF716123217F6800B2D78C /* GoogleService-Info.plist in Resources */,
 				A62E4EA4205C768500C72A56 /* LaunchScreen.storyboard in Resources */,
 				A62E4EA1205C768500C72A56 /* Assets.xcassets in Resources */,
 			);
@@ -369,35 +492,142 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BC640696AD69AFE5025CC6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Advocate/Pods-Advocate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Advocate/Pods-Advocate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C0727978AF220CBB8EB6BB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdvocateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB0943B2FE019ECD3C08BB9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Advocate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDC5657029A8BC376FFC0EFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AdvocateUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A62E4E8F205C768500C72A56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A62E4ED8205C7DFF00C72A56 /* TouchID.swift in Sources */,
-				A62E4EEA205C912400C72A56 /* LearnController.swift in Sources */,
-				A62E4EE4205C8A2100C72A56 /* SignInCell.swift in Sources */,
-				A62E4EE0205C81CA00C72A56 /* LoginController.swift in Sources */,
-				A62E4EE6205C8B3C00C72A56 /* SignInController.swift in Sources */,
-				A62E4EF8205EDAB000C72A56 /* SubscriptionText.swift in Sources */,
+				4964D9DA231E1C55007FE0FC /* Privacy.swift in Sources */,
+				49BF715D231E1F4700B2D78C /* Strings.swift in Sources */,
+				4953BF96233834BD00A7F174 /* UserCell.swift in Sources */,
+				49EA7C6B2335BE7E00A92C36 /* SignUpController.swift in Sources */,
+				4964D9D4231DD4B1007FE0FC /* Appearance.swift in Sources */,
+				4953BF9C2338359B00A7F174 /* ChatLogController.swift in Sources */,
+				49EA7C732335D3EC00A92C36 /* LawyerController.swift in Sources */,
+				4953BF902338336F00A7F174 /* NewMessageController.swift in Sources */,
 				A62E4ED0205C7C2500C72A56 /* IAPHelper.swift in Sources */,
-				A62E4EEC205C923F00C72A56 /* FileClaimController.swift in Sources */,
-				A62E4ED2205C7C7B00C72A56 /* Notification.swift in Sources */,
-				A62E4ED4205C7D0D00C72A56 /* Learn.swift in Sources */,
-				A62E4EE8205C8B8B00C72A56 /* ProfileController.swift in Sources */,
-				A62E4EE2205C896E00C72A56 /* LoginCell.swift in Sources */,
+				49EA7C752335D6F100A92C36 /* NewLawyerController.swift in Sources */,
+				4953BF942338342500A7F174 /* MessagesController.swift in Sources */,
 				A62E4ECE205C7BAB00C72A56 /* IAPMembership.swift in Sources */,
-				A62E4EF0205C93AD00C72A56 /* PrivacyController.swift in Sources */,
+				49DDC10A233C564600CB6CD6 /* User.swift in Sources */,
 				A62E4EDA205C7FA600C72A56 /* KeychainPasswordItem.swift in Sources */,
 				A62E4E97205C768500C72A56 /* AppDelegate.swift in Sources */,
-				A67FBD58206DB5FF00BCD13B /* Ratings.swift in Sources */,
 				A62E4EF4205D177800C72A56 /* SubscribeController.swift in Sources */,
-				A6C59F2C2069A01A00112078 /* CloudKit.swift in Sources */,
-				A62E4EDC205C807100C72A56 /* FileTextStrings.swift in Sources */,
-				A62E4EEE205C92D600C72A56 /* SettingsController.swift in Sources */,
-				A62E4ED6205C7D5E00C72A56 /* Privacy.swift in Sources */,
-				A62E4EDE205C810100C72A56 /* Login.swift in Sources */,
+				49EA7C5223332B7B00A92C36 /* LawyerCell.swift in Sources */,
+				49EA7C5D2333403A00A92C36 /* LawyerDetailController.swift in Sources */,
+				4953BF8D233831B000A7F174 /* Message.swift in Sources */,
+				4953BF9A2338352300A7F174 /* ChatInputContainerView.swift in Sources */,
+				49EA7C6D2335BEE800A92C36 /* LoginController.swift in Sources */,
+				4953BF98233834FB00A7F174 /* ChatMessageCell.swift in Sources */,
+				4964D9D1231DD40C007FE0FC /* Extensions.swift in Sources */,
+				4964D9DC231E1E5E007FE0FC /* TermsController.swift in Sources */,
+				49BF715F231E1F9F00B2D78C /* PrivacyController.swift in Sources */,
+				49DDC1112342E31E00CB6CD6 /* SettingsController.swift in Sources */,
 				A62E4E9F205C768500C72A56 /* Advocate.xcdatamodeld in Sources */,
+				49EA7C4A2333224C00A92C36 /* WelcomeController.swift in Sources */,
+				4964D9D8231E19F8007FE0FC /* Terms.swift in Sources */,
+				49EA7C5A23333E0B00A92C36 /* TabBarController.swift in Sources */,
+				49EA7C5823333DBB00A92C36 /* Lawyer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +688,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -465,6 +696,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -515,6 +747,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -522,6 +755,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -553,38 +787,43 @@
 		};
 		A62E4EBF205C768500C72A56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3599287D838A36AF34CDB006 /* Pods-Advocate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Advocate/Advocate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 583SEL8QQU;
 				INFOPLIST_FILE = Advocate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Advocate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PRODUCT_NAME = "Hello Advocate";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A62E4EC0205C768500C72A56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DFA866744498F416F9A5AA2 /* Pods-Advocate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Advocate/Advocate.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 583SEL8QQU;
 				INFOPLIST_FILE = Advocate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Advocate;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PRODUCT_NAME = "Hello Advocate";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		A62E4EC2205C768500C72A56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B62A9D6142704768858BA2D /* Pods-AdvocateTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -594,7 +833,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AdvocateTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Advocate.app/Advocate";
 			};
@@ -602,6 +841,7 @@
 		};
 		A62E4EC3205C768500C72A56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A39783CFFD2E6D437A38FA7 /* Pods-AdvocateTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -611,7 +851,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AdvocateTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Advocate.app/Advocate";
 			};
@@ -619,6 +859,7 @@
 		};
 		A62E4EC5205C768500C72A56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B041F9DD3E668A469A567A9 /* Pods-AdvocateUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -627,7 +868,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AdvocateUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Advocate;
 			};
@@ -635,6 +876,7 @@
 		};
 		A62E4EC6205C768500C72A56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 289A658BD46B020904C997FF /* Pods-AdvocateUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -643,7 +885,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AdvocateUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Advocate;
 			};

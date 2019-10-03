@@ -8,6 +8,7 @@
 
 import Foundation
 
-enum IAPMembership : String {
-    case autoRenewingSubscription = "com.Advocate.Membership.advocatemembership"
+enum IAPMembership: String {
+    case monthlyRenewingSubscription = "com.HelloAdvocate.Monthly.Membership.advocatemembership"
+    case annualRenewingSubscription = "com.HelloAdvocate.Annual.Membership.advocatemembership"
 }

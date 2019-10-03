@@ -19,9 +19,9 @@ class IAPHelper: NSObject {
     let paymentQueue = SKPaymentQueue.default()
     
     func getProducts() {
-        let productIdentifier : Set = [IAPMembership.autoRenewingSubscription.rawValue]
+        let productIdentifiers : Set = [IAPMembership.monthlyRenewingSubscription.rawValue, IAPMembership.annualRenewingSubscription.rawValue]
         
-        let request = SKProductsRequest(productIdentifiers: productIdentifier)
+        let request = SKProductsRequest(productIdentifiers: productIdentifiers)
         request.delegate = self
         request.start()
         paymentQueue.add(self)
@@ -34,8 +34,14 @@ class IAPHelper: NSObject {
     }
     
     func restorePurchases() {
-        print("Member restored purchase")
-        paymentQueue.restoreCompletedTransactions()
+        if (SKPaymentQueue.canMakePayments()) {
+            print("Member restored purchase")
+            paymentQueue.restoreCompletedTransactions()
+        }
+    }
+    
+    func paymentQueue(_ queue: SKPaymentQueue, restoreCompletedTransactionsFailedWithError error: Error) {
+        print("Member failed to restored purchase")
     }
 }
 
@@ -72,18 +78,25 @@ extension SKPaymentTransactionState {
         switch self {
         case .deferred:
             return "Payment Deferred"
+            
         case .failed:
             return "Payment Failed"
+            
         case .purchasing:
             return "Payment Purchasing"
+            
+        case .purchased:
+        let notification = NotificationCenter.default
+        notification.post(name: Notification.Name(Strings.subscriptionPurchased), object: nil)
+        return "Product Purchased"
+            
         case .restored:
             let notification = NotificationCenter.default
-            notification.post(name: Notification.Name(Notif().name), object: nil)
+            notification.post(name: Notification.Name(Strings.subscriptionRestored), object: nil)
             return "Purchase Restored"
-        case .purchased:
-            let notification = NotificationCenter.default
-            notification.post(name: Notification.Name(Notif().name), object: nil)
-            return "Product Purchased"
+            
+        @unknown default:
+            fatalError()
         }
     }
 }
