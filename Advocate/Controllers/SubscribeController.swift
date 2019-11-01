@@ -240,9 +240,7 @@ class SubscribeController: UIViewController {
 
     
     @objc private func termsOfServiceButtonTapped(_ sender: UIButton) {
-        let destination = TermsViewController()
-        navigationController?.modalPresentationStyle = .overCurrentContext
-        present(destination, animated: true, completion: nil)
+        
     }
     
     @objc private func privacyPolicyButtonTapped(_ sender: UIButton) {

@@ -49,6 +49,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
         inputContainerView.inputTextField.delegate = self
     }
     
+    
     // MARK: - Properties
     
     var messages = [Message]()
@@ -59,6 +60,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
     var blackBackgroundView: UIView?
     var startingImageView: UIImageView?
     
+    let appDelegate = AppDelegate()
     
     // MARK: - Container View
       
@@ -97,6 +99,10 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
     }
     
     let cellId = "cellId"
+    
+    @objc private func didSendNotification(notificstion: Notification) {
+        print("Message observed")
+    }
     
     // MARK: - Image methods
     
@@ -251,7 +257,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
         }
         
         if message.fromId == Auth.auth().currentUser?.uid {
-            //outgoing black
+            //outgoing blue
             cell.bubbleView.backgroundColor = messageBlueColor
             cell.textView.textColor = .white
             cell.userImage.isHidden = true
@@ -260,7 +266,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
             cell.bubbleViewLeftAnchor?.isActive = false
             
         } else {
-            //incoming white
+            //incoming dark gray
             cell.bubbleView.backgroundColor = .darkGray
             cell.textView.textColor = .white
             cell.userImage.isHidden = false
@@ -308,7 +314,7 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
     
     // MARK: - Send text methods
     
-    var chatInputConatinerView: ChatInputContainerView?
+    var chatInputContainerView: ChatInputContainerView?
     
     @objc func sendNonEmptyMessage() {
         
@@ -317,9 +323,9 @@ class ChatLogController: UICollectionViewController, UITextFieldDelegate, UIColl
         }
         
         if emptyTextField {
-            chatInputConatinerView?.sendButton.isUserInteractionEnabled = false
+            chatInputContainerView?.sendButton.isUserInteractionEnabled = false
         } else {
-            chatInputConatinerView?.sendButton.isUserInteractionEnabled = true
+            chatInputContainerView?.sendButton.isUserInteractionEnabled = true
             handleSend()
         }
     }

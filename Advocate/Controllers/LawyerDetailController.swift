@@ -72,6 +72,14 @@ class LawyerDetailController: UIViewController {
         return label
     }()
     
+    let verifiedImageView: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(named: "Verified")
+        image.contentMode = .scaleAspectFill
+        image.translatesAutoresizingMaskIntoConstraints = false
+        return image
+    }()
+    
     let practiceLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
@@ -141,6 +149,7 @@ class LawyerDetailController: UIViewController {
         
         scrollView.addSubview(profileImageView)
         scrollView.addSubview(usernameLabel)
+        scrollView.addSubview(verifiedImageView)
         scrollView.addSubview(practiceLabel)
         scrollView.addSubview(lawSchoolLabel)
         scrollView.addSubview(biographyLabel)
@@ -151,6 +160,8 @@ class LawyerDetailController: UIViewController {
         let userImageConstraints = [profileImageView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 30.0), profileImageView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor), profileImageView.widthAnchor.constraint(equalToConstant: 150.0), profileImageView.heightAnchor.constraint(equalToConstant: 150.0)]
         
         let usernameLabelConstraints = [usernameLabel.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 20.0), usernameLabel.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor)]
+        
+        let verifiedImageViewConstraints = [verifiedImageView.centerYAnchor.constraint(equalTo: usernameLabel.centerYAnchor), verifiedImageView.leftAnchor.constraint(equalTo: usernameLabel.rightAnchor, constant: 10.0), verifiedImageView.widthAnchor.constraint(equalToConstant: 22.0), verifiedImageView.heightAnchor.constraint(equalToConstant: 22.0)]
                 
         let practiceLabelConstraints = [practiceLabel.topAnchor.constraint(equalTo: usernameLabel.bottomAnchor, constant: 10.0), practiceLabel.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor)]
         
@@ -163,6 +174,7 @@ class LawyerDetailController: UIViewController {
         NSLayoutConstraint.activate(scrollViewConstraints)
         NSLayoutConstraint.activate(userImageConstraints)
         NSLayoutConstraint.activate(usernameLabelConstraints)
+        NSLayoutConstraint.activate(verifiedImageViewConstraints)
         NSLayoutConstraint.activate(practiceLabelConstraints)
         NSLayoutConstraint.activate(lawSchoolConstraints)
         NSLayoutConstraint.activate(biographyLabelConstraints)

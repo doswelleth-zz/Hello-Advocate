@@ -25,7 +25,7 @@ class LawyerController: UITableViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //        self.tabBarController?.delegate = self
+        self.tabBarController?.delegate = self
         
         self.navigationController?.navigationBar.isHidden = false
         self.title = navigationBarTitle

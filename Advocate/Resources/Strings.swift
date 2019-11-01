@@ -22,7 +22,7 @@ struct Strings {
     static var loginButtonTitle = "Login"
     static var signUpButtonTitle = "Sign Up"
     static var logoLabelText = "Hello Advocate"
-    static var logoSubtitleText = "a smarter matchmaking service"
+    static var logoSubtitleText = "Legal Insurance for Everyone"
     
     // Sign Up Controller
     static var backButtonTitle = "◀︎"
@@ -54,7 +54,7 @@ struct Strings {
     static var navigationTitle = "Membership"
     static var unlimitedMessagesLabelTitle = "Send and receive unlimited messages"
     static var freeMatchMakingLabelTitle = "Machine-intelligent matchmaking service"
-    static var communitySupportLabelTitle = "24-hour customer support"
+    static var communitySupportLabelTitle = "Free consultations"
     
     static var subscribeButtonTitle = "Monthly Membership $49.99/mo."
     static var subscribeAnnualButtonTitle = "Annual Membership $499.99/yr."
@@ -77,13 +77,13 @@ struct Strings {
     
     // Learn Controller
     
-    static var learn = "https://www.hello-advocate.com"
+    static var learn = "https://www.hello-advocate.com/"
     
     // Settings Controller
 
     static var settings = "Settings"
     
-    static var createAProfileButton = "Create a Profile 🎖"
+    static var createAProfileButton = "Create attorney profile 🎖"
     
     static var getStartedLabelTitle = "Get Started"
     static var getStartedButtonTitle = "For attorneys only"
@@ -102,4 +102,8 @@ struct Strings {
     
     static var subscriptionPurchased = "subscriptionPurchased"
     static var subscriptionRestored = "subscriptionRestored"
+    
+    static var sendMessageNotification = "sendMessageNotification"
+    static var newMessageSubtitle = "New Message"
+    static var newMessageIdentifier = "newMessageIdentifier"
 }

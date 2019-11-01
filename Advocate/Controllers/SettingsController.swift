@@ -13,11 +13,11 @@ import SafariServices
 
 private let restoreMonthlyActionTitle = "Restore"
 private let restoreMonthlyAlertTitle = "Restore Monthly Membership"
-private let restoreMonthlyMessageTitle = "Restore your Membership today for $9.99 a month and enjoy access to unlimited file claims and a qualified attorney for free."
+private let restoreMonthlyMessageTitle = "Restore your Membership today for $49.99 a month and enjoy access to unlimited file claims and a qualified attorney for free."
 
 private let restoreAnnualButtonTitle = "Restore"
 private let restoreAnnualAlertTitle = "Restore Annual Membership"
-private let restoreAnnualMessageTitle = "Restore your Membership today for $99.99 a month and enjoy access to unlimited file claims and a qualified attorney for free."
+private let restoreAnnualMessageTitle = "Restore your Membership today for $499.99 a month and enjoy access to unlimited file claims and a qualified attorney for free."
 private let restoreAnnualActionTitle = "Restore"
 
 private let dismissActionTitle = "Dismiss"
@@ -91,7 +91,7 @@ class SettingsController: UIViewController {
     
     let usernameLabel : UILabel = {
         let label = UILabel()
-        label.textColor = .white
+        label.textColor = .lightGray
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 20.0)
         label.sizeToFit()
@@ -248,15 +248,26 @@ class SettingsController: UIViewController {
         usernameLabel.text = user.name
     }
     
+    
+    
     @objc private func createAProfileTapped(sender: UIButton) {
         let destination = NewLawyerController()
-        self.navigationController?.pushViewController(destination, animated: true)
+        navigationController?.pushViewController(destination, animated: true)
     }
     
     @objc private func getStartedButtonTapped(sender: UIButton) {
         let destination = SubscribeController()
         self.navigationController?.pushViewController(destination, animated: true)
     }
+    
+    private func presentErrorAlert() {
+           let alert = UIAlertController(title: "Error", message: "Please enter a correct password", preferredStyle: .alert)
+           let action = UIAlertAction(title: "Dismiss", style: .default) { (action) in
+               // dismiss alert controller
+           }
+           alert.addAction(action)
+           present(alert, animated: true, completion: nil)
+       }
     
     @objc func restoreMonthlyButtonTapped(sender: UIButton) {
         presentRestoreMonthlyAlert()
@@ -360,7 +371,7 @@ class SettingsController: UIViewController {
         
         let scrollViewConstraints = [scrollView.centerXAnchor.constraint(equalTo: view.centerXAnchor), scrollView.centerYAnchor.constraint(equalTo: view.centerYAnchor), scrollView.widthAnchor.constraint(equalToConstant: view.frame.size.width), scrollView.heightAnchor.constraint(equalToConstant: 600.0)]
         
-        let createProfileButtonConstraints = [createProfileButton.topAnchor.constraint(equalTo: usernameLabel.bottomAnchor, constant: 5.0), createProfileButton.leftAnchor.constraint(equalTo: usernameLabel.leftAnchor), createProfileButton.widthAnchor.constraint(equalToConstant: 200.0), createProfileButton.heightAnchor.constraint(equalToConstant: 19.0)]
+        let createProfileButtonConstraints = [createProfileButton.topAnchor.constraint(equalTo: usernameLabel.bottomAnchor, constant: 5.0), createProfileButton.leftAnchor.constraint(equalTo: usernameLabel.leftAnchor), createProfileButton.widthAnchor.constraint(equalToConstant: 250.0), createProfileButton.heightAnchor.constraint(equalToConstant: 19.0)]
         
         let profileImageViewConstraints = [profileImageView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 50.0), profileImageView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 30.0), profileImageView.widthAnchor.constraint(equalToConstant: 50.0), profileImageView.heightAnchor.constraint(equalToConstant: 50.0)]
             

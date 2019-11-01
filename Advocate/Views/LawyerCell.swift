@@ -42,6 +42,14 @@ class LawyerCell: UITableViewCell {
         return label
     }()
     
+    let verifiedImageView: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(named: "Verified")
+        image.contentMode = .scaleAspectFill
+        image.translatesAutoresizingMaskIntoConstraints = false
+        return image
+    }()
+    
     let practiceLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
@@ -103,10 +111,13 @@ class LawyerCell: UITableViewCell {
         addSubview(practiceLabel)
         addSubview(locationLabel)
         addSubview(dateLabel)
+        addSubview(verifiedImageView)
         
         let profileImageViewConstraints = [profileImageView.topAnchor.constraint(equalTo: topAnchor, constant: 20.0), profileImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 20.0), profileImageView.widthAnchor.constraint(equalToConstant: 44.0), profileImageView.heightAnchor.constraint(equalToConstant: 44.0)]
         
         let usernameLabelConstraints = [usernameLabel.centerYAnchor.constraint(equalTo: profileImageView.centerYAnchor), usernameLabel.leftAnchor.constraint(equalTo: profileImageView.rightAnchor, constant: 10.0)]
+        
+        let verifiedImageViewConstraints = [verifiedImageView.centerYAnchor.constraint(equalTo: usernameLabel.centerYAnchor), verifiedImageView.leftAnchor.constraint(equalTo: usernameLabel.rightAnchor, constant: 10.0), verifiedImageView.widthAnchor.constraint(equalToConstant: 22.0), verifiedImageView.heightAnchor.constraint(equalToConstant: 22.0)]
         
         let practiceLabelConstraints = [practiceLabel.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 5.0), practiceLabel.leftAnchor.constraint(equalTo: usernameLabel.leftAnchor)]
         
@@ -116,6 +127,7 @@ class LawyerCell: UITableViewCell {
         
         NSLayoutConstraint.activate(profileImageViewConstraints)
         NSLayoutConstraint.activate(usernameLabelConstraints)
+        NSLayoutConstraint.activate(verifiedImageViewConstraints)
         NSLayoutConstraint.activate(practiceLabelConstraints)
         NSLayoutConstraint.activate(locationLabelConstraints)
         NSLayoutConstraint.activate(dateLabelConstraints)
